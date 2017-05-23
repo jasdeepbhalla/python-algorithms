@@ -13,10 +13,10 @@ def lca(root, n1, n2):
 	if root is None:
 		return None
 
-	if (n1 < root.data and n2 < root.data):
+	if n1 < root.data and n2 < root.data:
 		return lca(root.left, n1, n2)
 
-	if (n1 > root.data and n2 > root.data):
+	if n1 > root.data and n2 > root.data:
 		return lca(root.right, n1, n2)
 
 	return root
